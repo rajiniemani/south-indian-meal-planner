@@ -1,0 +1,107 @@
+/* Global styles */
+.App {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  text-align: center;
+  background-color: #fafafa; /* Light background for a fresh feel */
+  color: #333; /* Dark text for contrast */
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #27ae60; /* Healthy green color */
+  margin-bottom: 10px;
+}
+
+.subtext {
+  font-size: 1.1em;
+  color: #7f8c8d; /* Slightly muted gray for text */
+  margin-bottom: 30px;
+}
+
+.meal-plan-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 columns */
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.day-box {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff; /* White background for the meal boxes */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.meal-box {
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+}
+
+.meal-box h3 {
+  margin: 5px 0;
+  color: #27ae60; /* Green for meal headings */
+  font-size: 1.2em;
+}
+
+.meal-box p {
+  margin: 0;
+  font-size: 1em;
+  color: #2c3e50; /* Dark text for content */
+}
+
+.meal-box p span {
+  color: #e74c3c; /* Red color for the icons */
+}
+
+.day-box h2 {
+  margin-bottom: 15px;
+  color: #2980b9; /* Blue color for the day headers */
+}
+
+/* Icons added using emoji */
+.morning-drink-icon {
+  color: #f39c12; /* Orange for morning drink */
+}
+
+.breakfast-icon {
+  color: #f1c40f; /* Yellow for breakfast */
+}
+
+.mid-snack-icon {
+  color: #3498db; /* Blue for mid-snack */
+}
+
+.lunch-icon {
+  color: #2ecc71; /* Green for lunch */
+}
+
+.evening-snack-icon {
+  color: #9b59b6; /* Purple for evening snack */
+}
+
+.dinner-icon {
+  color: #e74c3c; /* Red for dinner */
+}
+
+/* Grid Layout for small screens */
+@media (max-width: 1200px) {
+  .meal-plan-grid {
+    grid-template-columns: repeat(5, 1fr); /* 5 columns on medium screens */
+  }
+}
+
+@media (max-width: 900px) {
+  .meal-plan-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on smaller screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .meal-plan-grid {
+    grid-template-columns: 1fr; /* 1 column on very small screens */
+  }
+}
