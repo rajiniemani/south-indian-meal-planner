@@ -105,3 +105,10 @@ h1 {
     grid-template-columns: 1fr; /* 1 column on very small screens */
   }
 }
+/* HealthBenefits.css */
+.food-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

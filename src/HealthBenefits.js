@@ -1,10 +1,10 @@
-import React from 'react';
-import healthyFoodImage from '../public/images/healthy-food.jpg'; // Add the correct path to the healthy food image
-import unhealthyFoodImage from '../public/images/unhealthy-food.jpg'; // Add the correct path to the unhealthy food image
+import React from "react";
+import healthyFood from "./assets/healthy-food.jpg";
+import unhealthyFood from "./assets/unhealthy-food.jpg";
 
-const HealthBenefits = () => {
+function HealthBenefits() {
   return (
-    <div>
+        <div>
       <h2>Unlock the Secret to a Healthy Life: Lose Weight and Prevent Heart Diseases</h2>
       <p>
         Weight loss is more than just about looking good – it's about feeling good and living a longer, healthier life. Maintaining a healthy weight helps reduce the risk of heart disease, stroke, diabetes, and other serious conditions. Let’s explore how losing weight can be the key to a better, disease-free future!
@@ -15,11 +15,11 @@ const HealthBenefits = () => {
         The right weight not only gives you more energy and confidence but also offers numerous health benefits. Here are just a few:
       </p>
       <ul>
-        <li><i className="fas fa-heart"></i> <strong>Lower Risk of Heart Disease</strong>: Excess weight puts extra strain on your heart. Losing it can improve your blood pressure and cholesterol levels.</li>
-        <li><i className="fas fa-bone"></i> <strong>Stronger Bones & Joints</strong>: Reducing weight helps reduce the risk of joint problems like arthritis and improves overall bone health.</li>
-        <li><i className="fas fa-brain"></i> <strong>Enhanced Mental Health</strong>: Achieving your ideal weight can improve your mood, reduce stress, and even enhance cognitive function.</li>
+        <li><i className="fas fa-heart"></i> <strong>🍎Lower Risk of Heart Disease</strong>: Excess weight puts extra strain on your heart. Losing it can improve your blood pressure and cholesterol levels.</li>
+        <li><i className="fas fa-bone"></i> <strong>💪Stronger Bones & Joints</strong>: Reducing weight helps reduce the risk of joint problems like arthritis and improves overall bone health.</li>
+        <li><i className="fas fa-brain"></i> <strong>🧠Enhanced Mental Health</strong>: Achieving your ideal weight can improve your mood, reduce stress, and even enhance cognitive function.</li>
         <li><i className="fas fa-running"></i> <strong>Increased Physical Fitness</strong>: Losing weight can improve your energy levels, making you more active and capable of exercising.</li>
-        <li><i className="fas fa-apple-alt"></i> <strong>Healthier Eating Habits</strong>: As you lose weight, you’ll adopt healthier eating patterns that further support your well-being.</li>
+        <li><i className="fas fa-apple-alt"></i> <strong>🌿Healthier Eating Habits</strong>: As you lose weight, you’ll adopt healthier eating patterns that further support your well-being.</li>
       </ul>
 
       <h3>Healthy Foods vs Unhealthy Foods</h3>
@@ -39,7 +39,25 @@ const HealthBenefits = () => {
           <p>On the other hand, processed foods, sugary snacks, and fried meals can lead to weight gain, bloating, high blood pressure, and increased risk of chronic diseases.</p>
         </div>
       </div>
-
+      <h3>Comparison: Healthy vs Unhealthy Eating</h3>
+      <div style={{ display: "flex", gap: "20px", alignItems: "center" }}>
+        <div>
+          <img
+            src={healthyFood}
+            alt="Healthy Food"
+            style={{ width: "250px", borderRadius: "10px" }}
+          />
+          <p style={{ textAlign: "center" }}>Healthy Food</p>
+        </div>
+        <div>
+          <img
+            src={unhealthyFood}
+            alt="Unhealthy Food"
+            style={{ width: "250px", borderRadius: "10px" }}
+          />
+          <p style={{ textAlign: "center" }}>Unhealthy Food</p>
+        </div>
+      </div>
       <h3>It's Time to Take Action</h3>
       <p>
         Remember, the path to better health starts with small, consistent changes in your daily habits. Start today and make the choice to live a healthier life. Your body will thank you!

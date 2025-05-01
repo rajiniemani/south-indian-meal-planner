@@ -7,6 +7,7 @@ import Privacy from "./Privacy";
 import Contact from "./Contact";
 import HealthBenefits from "./HealthBenefits"; // Import the new blog component
 
+
 const App = () => {
   return (
     <>
