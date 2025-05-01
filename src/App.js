@@ -1,24 +1,27 @@
+import { Helmet } from 'react-helmet';
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MealPlanner from "./MealPlanner";
-import Contact from "./Contact";
 import Privacy from "./Privacy";
-import "./App.css";
+import Contact from "./Contact";
 
 function App() {
   return (
-    <Router>
-      <nav className="nav">
-        <Link to="/">Home</Link>
-        <Link to="/contact">Contact</Link>
-        <Link to="/privacy">Privacy</Link>
-      </nav>
+      <Helmet>
+       <script
+         data-ad-client="ca-pub-2510038568334237"
+         async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+        ></script>
+      </Helmet>
+      {<Router>
       <Routes>
         <Route path="/" element={<MealPlanner />} />
-        <Route path="/contact" element={<Contact />} />
         <Route path="/privacy" element={<Privacy />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
-    </Router>
+    </Router>}
+    </>
   );
 }
 

@@ -3,10 +3,11 @@ import React from "react";
 
 function Contact() {
   return (
-    <div className="page">
+    <div style={{ padding: "1rem" }}>
       <h1>Contact Us</h1>
-      <p>Email: support@southindianmealplanner.com</p>
-      {/* You can add a contact form later */}
+      <p>
+        For inquiries, please email us at: <strong>emanirajini@email.com</strong>
+      </p>
     </div>
   );
 }
