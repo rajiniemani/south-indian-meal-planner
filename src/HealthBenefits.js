@@ -1,6 +1,7 @@
 import React from "react";
 import healthyFoodImage from './assets/healthy-food.jpg';
 import unhealthyFoodImage from './assets/unhealthy-food.jpg';
+import WeightLossEstimator from './components/WeightLossEstimator';
 
 function HealthBenefits() {
   return (
@@ -50,7 +51,7 @@ function HealthBenefits() {
       <p>
         Small changes to your lifestyle can lead to big improvements in your health. Start with balanced meals, regular movement, and a positive mindset!
       </p>
-
+      <WeightLossEstimator />
       <h3>📤 Share This Article</h3>
       <div style={{ display: 'flex', gap: '10px', marginTop: '10px' }}>
         <a

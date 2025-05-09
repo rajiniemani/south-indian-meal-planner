@@ -4,10 +4,11 @@ import { Helmet } from "react-helmet";
 import MealPlanner from "./MealPlanner";
 import Contact from "./Contact";
 import Privacy from "./Privacy";
+import Terms from './Terms';
 import HealthBenefits from "./HealthBenefits";
 
 function App() {
-  return (
+  return (  
     <>
       <Helmet>
         <script
@@ -23,6 +24,7 @@ function App() {
           <Link to="/health-benefits" style={{ margin: "0 10px" }}>Health Benefits</Link>
           <Link to="/privacy" style={{ margin: "0 10px" }}>Privacy Policy</Link>
           <Link to="/contact" style={{ margin: "0 10px" }}>Contact</Link>
+          <Link to="/terms" style={{ margin: "0 10px" }}>Terms</Link>
         </nav>
 
         <Routes>
@@ -30,6 +32,7 @@ function App() {
           <Route path="/health-benefits" element={<HealthBenefits />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/terms" element={<Terms/>} />
         </Routes>
       </Router>
     </>
