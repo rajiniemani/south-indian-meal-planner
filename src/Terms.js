@@ -8,4 +8,3 @@ export default function Terms() {
     </div>
   );
 }
-export default Terms;
