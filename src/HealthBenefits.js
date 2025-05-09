@@ -1,7 +1,7 @@
 import React from "react";
 import healthyFoodImage from './assets/healthy-food.jpg';
 import unhealthyFoodImage from './assets/unhealthy-food.jpg';
-import WeightLossEstimator from './components/WeightLossEstimator';
+import WeightLossEstimator from './components/WeightLossEstimator.js';
 
 function HealthBenefits() {
   return (
